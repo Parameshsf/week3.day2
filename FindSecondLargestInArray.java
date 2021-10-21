@@ -1,6 +1,7 @@
 package week3.day2;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -9,8 +10,13 @@ public class FindSecondLargestInArray {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] data = {3,2,11,4,6,7};
+		//Using Arrays Sort
+		Arrays.sort(data);
+		int arrLength = data.length;
+		System.out.println("The secong last element from an array is: "+data[arrLength - 2]);
 		
-		List<Integer> lst = new ArrayList<Integer>();
+		//Using List Converting array values in to List
+		List<Integer> lst = new ArrayList<Integer>(); 
 		
 		for (int i = 0; i < data.length; i++) {
 			lst.add(data[i]);
